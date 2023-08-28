@@ -11,6 +11,6 @@ from typing import Iterable, List, Sequence
 
 def element_length(lst: Iterable[Sequence]) -> List[Sequence[int]]:
     """
-    return [(i, len(i)) for i in lst]
+    Returns a list of tuples with the length of each element
     """
     return [(i, len(i)) for i in lst]
