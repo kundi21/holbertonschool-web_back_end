@@ -6,11 +6,9 @@ return values with the appropriate types.
 def element_length(lst):
     return [(i, len(i)) for i in lst]
 """
-from typing import Iterable, List, Sequence
+from typing import Iterable, List, Tuple, Sequence
 
-
-def element_length(lst: Iterable[Sequence]) -> List[Sequence[int]]:
-    """
-    Returns a list of tuples with the length of each element
+def element_length(lst: Iterable[Sequence]) -> List[Tuple[Sequence, int]]:
+    """return [(i, len(i)) for i in lst]
     """
     return [(i, len(i)) for i in lst]
