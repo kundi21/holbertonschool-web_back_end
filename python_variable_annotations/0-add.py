@@ -6,6 +6,7 @@ as arguments and returns their sum as a float.
 """
 import typing
 
+
 def add(a: float, b: float) -> float:
     """Return the sum of a and b."""
     return a + b
