@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """
 task 0. Basic annotations - add
 Write a type-annotated function add that takes a float a and a float b
