@@ -10,6 +10,7 @@ school, a string with a value of “Holberton”
 """
 import typing
 
+
 def define_variables() -> typing.Tuple[int, float, bool, str]:
     """
     Define variables.
