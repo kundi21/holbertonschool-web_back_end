@@ -20,11 +20,6 @@ async def wait_n(n: int, max_delay: int) -> typing.List[float]:
     """
     function that executes multiple coroutines at the same time with async
     and return a list of the delays in ascending order.
-    Args:
-        n: number of coroutines to execute
-        max_delay: maximum delay
-    Return:
-        list of the delays in ascending order.
     """
     tasks = [asyncio.create_task(wait_random(max_delay)) for _ in range(n)]
     delays = []
