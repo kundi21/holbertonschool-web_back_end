@@ -14,13 +14,10 @@ from typing import List
 wait_n = __import__('1-concurrent_coroutines').wait_n
 
 
-async def measure_time(n: int, max_delay: int) -> float:
-    """
-    measure the runtime
-    """
-    time = 0
-    start = time.time()
-    await wait_n(n, max_delay)
-    end = time.time()
-    time = end - start
-    return time / n
+def measure_time(n: int, max_delay: int) -> float:
+    """ Wait """
+    start_time = time.time()
+    return_list = asyncio.run(wait_n(n, max_delay))
+    end_time = time.time()
+    elapsed_time = end_time - start_time
+    return elapsed_time / n
